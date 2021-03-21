@@ -17,12 +17,7 @@ jobs:
       run: swift build -v
     - name: Run tests
       run: xcodebuild test -scheme AsyncOperation-Package -destination platform="macOS" -enableCodeCoverage YES
-    - name: Export test results
-      run: xcrun llvm-cov export -format="lcov" .build/debug/AsyncOperationPackageTests.xctest/Contents/MacOS/AsyncOperationPackageTests -instr-profile .build/debug/codecov/default.profdata > info.lcov
+#    - name: Export test results
+#      run: xcrun llvm-cov export -format="lcov" .build/debug/AsyncOperationPackageTests.xctest/Contents/MacOS/AsyncOperationPackageTests -instr-profile .build/debug/codecov/default.profdata > info.lcov
     - name: Codecov
-      uses: codecov/codecov-action@v1.3.1
-      with:
-        fail_ci_if_error: true
-        verbose: true
-        xcode_package: -J '^AsyncOperation$'
-        gcov_path_exclude: "Tests/AsyncOperationTests/*.*"
+      run: bash <(curl -s https://codecov.io/bash) -J 'AsyncOperation'
