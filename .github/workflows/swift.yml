@@ -20,4 +20,5 @@ jobs:
       with:
         fail_ci_if_error: true
         verbose: true
+        xcode_package: "AsyncOperation"
 
