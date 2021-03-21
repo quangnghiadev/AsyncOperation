@@ -13,14 +13,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Build
+      run: swift build -v
     - name: Run tests
-      run: swift test --enable-code-coverage
-    - name: Run tests
+      run: swift test -v --enable-code-coverage
+    - name: Export test results
       run: xcrun llvm-cov export -format="lcov" .build/debug/AsyncOperationPackageTests.xctest/Contents/MacOS/AsyncOperationPackageTests -instr-profile .build/debug/codecov/default.profdata > info.lcov
     - name: Codecov
       uses: codecov/codecov-action@v1.3.1
       with:
         fail_ci_if_error: true
         verbose: true
-        xcode_package: "AsyncOperation"
-
