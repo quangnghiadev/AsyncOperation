@@ -13,8 +13,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Generate XCode project
-      run: swift package generate-xcodeproj
     - name: Run tests
       run: xcodebuild test -scheme AsyncOperation-Package -destination platform="macOS" -enableCodeCoverage YES
     - name: Codecov
