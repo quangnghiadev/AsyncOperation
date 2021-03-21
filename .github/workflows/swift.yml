@@ -13,11 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-#    - name: Build
-#      run: swift build -v
     - name: Run tests
       run: xcodebuild test -scheme AsyncOperation-Package -destination platform="macOS" -enableCodeCoverage YES
-#    - name: Export test results
-#      run: xcrun llvm-cov export -format="lcov" .build/debug/AsyncOperationPackageTests.xctest/Contents/MacOS/AsyncOperationPackageTests -instr-profile .build/debug/codecov/default.profdata > info.lcov
     - name: Codecov
       run: bash <(curl -s https://codecov.io/bash) -J 'AsyncOperation'
