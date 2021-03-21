@@ -25,3 +25,4 @@ jobs:
         fail_ci_if_error: true
         verbose: true
         xcode_package: -J '^AsyncOperation$'
+        gcov_path_exclude: "Tests/AsyncOperationTests/*.*"
