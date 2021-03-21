@@ -1,5 +1,5 @@
-import XCTest
 @testable import AsyncOperation
+import XCTest
 
 final class AsyncOperationTests: XCTestCase {
     private var worker: WorkerOperation!
@@ -9,7 +9,6 @@ final class AsyncOperationTests: XCTestCase {
         super.tearDown()
         worker = nil
     }
-    
     
     func testCallingAsyncTask() {
         let expect = expectation(description: "async worker")
@@ -48,8 +47,4 @@ final class AsyncOperationTests: XCTestCase {
         wait(for: [expect], timeout: 2.0)
         XCTAssertEqual(worker.isFinished, false)
     }
-
-    static var allTests = [
-        ("testExample", testCallingAsyncTask),
-    ]
 }

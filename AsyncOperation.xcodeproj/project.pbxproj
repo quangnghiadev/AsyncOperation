@@ -25,7 +25,6 @@
 		OBJ_24 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* AsyncOperation.swift */; };
 		OBJ_31 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_42 /* AsyncOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* AsyncOperationTests.swift */; };
-		OBJ_43 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* XCTestManifests.swift */; };
 		OBJ_45 /* AsyncOperation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AsyncOperation::AsyncOperation::Product" /* AsyncOperation.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +50,6 @@
 		"AsyncOperation::AsyncOperation::Product" /* AsyncOperation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AsyncOperation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"AsyncOperation::AsyncOperationTests::Product" /* AsyncOperationTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = AsyncOperationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_12 /* AsyncOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperationTests.swift; sourceTree = "<group>"; };
-		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_17 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		OBJ_18 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_12 /* AsyncOperationTests.swift */,
-				OBJ_13 /* XCTestManifests.swift */,
 				2D7EB0C82606EB690056EAF7 /* WorkerOperation.swift */,
 			);
 			name = AsyncOperationTests;
@@ -237,7 +234,6 @@
 			files = (
 				2D7EB0C92606EB690056EAF7 /* WorkerOperation.swift in Sources */,
 				OBJ_42 /* AsyncOperationTests.swift in Sources */,
-				OBJ_43 /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
