@@ -2,4 +2,4 @@ codecov:
   require_ci_to_pass: yes
   fail_ci_if_error: true
 ignore:
-  - "Tests"  
+  - "Tests/**/*"  
