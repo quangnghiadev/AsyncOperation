@@ -16,4 +16,4 @@ jobs:
     - name: Run tests
       run: xcodebuild test -scheme AsyncOperation-Package -destination platform="macOS" -enableCodeCoverage YES
     - name: Codecov
-      run: bash <(curl -s https://codecov.io/bash) -J 'AsyncOperation'
+      run: bash <(curl -s https://codecov.io/bash) -J 'AsyncOperation$'
