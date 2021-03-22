@@ -61,7 +61,7 @@ open class AsyncOperation: Operation {
         }
     }
 
-    override public func cancel() {
+    override open func cancel() {
         super.cancel()
         finish()
     }
