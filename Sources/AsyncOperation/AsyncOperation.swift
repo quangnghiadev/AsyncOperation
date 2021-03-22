@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class AsyncOperation: Operation {
+open class AsyncOperation: Operation {
     public enum State: String {
         case ready, executing, finished
 
