@@ -56,5 +56,5 @@ That's all!
 
 
 ## License
-- RequestKits is released under the MIT license. See [LICENSE](https://github.com/nghiadev95/RequestKits/blob/master/LICENSE) for more information.
+- AsyncOperation is released under the MIT license. See [LICENSE](https://github.com/quangnghiadev/AsyncOperation/blob/master/LICENSE) for more information.
     
