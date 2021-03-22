@@ -1,5 +1,5 @@
 
-[![Build Status](https://github.com/nghiadev95/RequestKits/workflows/CI/badge.svg?branch=master)](https://github.com/nghiadev95/RequestKits/actions)
+[![Build Status](https://github.com/quangnghiadev/AsyncOperation/workflows/Swift/badge.svg?branch=master)](https://github.com/quangnghiadev/AsyncOperation/actions)
 [![SPM compatible](https://img.shields.io/badge/SPM-Compatible-brightgreen.svg?style=flat)](https://swift.org/package-manager/)
 [![Swift](https://img.shields.io/badge/Swift-5.3-orange.svg)](https://swift.org)
 [![Xcode](https://img.shields.io/badge/Xcode-12.2-blue.svg)](https://developer.apple.com/xcode)
@@ -16,7 +16,7 @@
 ## Installation
 
 ### Swift Package Manager
-You can use The Swift Package Manager to install AsyncOperation by adding `https://github.com/nghiadev95/AsyncOperation.git` to Swift Package of your XCode project
+You can use The Swift Package Manager to install AsyncOperation by adding `https://github.com/quangnghiadev/AsyncOperation.git` to Swift Package of your XCode project
 
 ## Usage
 
